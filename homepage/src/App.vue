@@ -24,5 +24,11 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(31, 31, 31);
+    color: rgb(228, 226, 226);
+  }
+
+  div.content {
+    margin-left: 170px;
+    margin-right: 170px;
   }
 </style>

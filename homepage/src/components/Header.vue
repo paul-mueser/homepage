@@ -10,7 +10,7 @@
               <div class="navbarNav">
                 <router-link to="/">overview</router-link>
                 <router-link to="/projects">projects</router-link>
-                <button id="lightToggle" title="Change theme">
+                <button id="lightToggle" title="Change theme" style="display: none;">
                   <i>Dark</i>
                   <!-- TODO add light/dark mode + logic -->
                 </button>
@@ -44,17 +44,13 @@
 
   .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
   }
 
-  .navbarSocial {
-    float: left;
-  }
-
   .navbarNav {
-    float: right;
     overflow: hidden;
   }
   
