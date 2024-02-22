@@ -1,0 +1,24 @@
+name: Deployment
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: copy files to server
+        uses: appleboy/scp-action@master
+        with:
+          HOST: ${{ secrets.HOST }}
+          PORT: ${{ secrets.PORT }}
+          USERNAME: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          target: ${{ secrets.TARGET }}
+          source: "./site/*"
+          strip_components: 1
