@@ -9,7 +9,7 @@
         <p>
             The bot is written in JavaScript and uses the discord.js and discord-player library. It can either be run using Node.js or as a Docker container.
         </p>
-        <a href="#">More information</a>
+        <router-link class="highlight" to="/projects/musicbot">More information</router-link>
       </div>
 </template>
 

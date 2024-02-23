@@ -12,7 +12,7 @@
         <p>
             The bot is written in JavaScript and uses the discord.js library. It can either be run using Node.js or as a Docker container.
         </p>
-        <a class="highlight" href="#">More information</a>
+        <router-link class="highlight" to="/projects/statsbot">More information</router-link>
     </div>
 </template>
 

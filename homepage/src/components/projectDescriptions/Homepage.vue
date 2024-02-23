@@ -9,7 +9,7 @@
         <p>
             The homepage is written in JavaScript and uses the Vue.js framework.
         </p>
-        <a class="highlight" href="https://github.com/paul-mueser/homepage">More information</a>
+        <a class="highlight" href="https://github.com/paul-mueser/homepage" rel="external nofollow noopener" target="_blank">More information</a>
     </div>
 </template>
 
