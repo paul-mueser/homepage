@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h1>Discord Stats Bot <a class="highlight" href="https://github.com/paul-mueser/stats-bot" 
-      rel="external nofollow noopener" target="_blank"><font-awesome-icon :icon="['fas', 'code']"/></a></h1>
+    <h1>Discord Stats Bot <a class="highlight" href="https://github.com/paul-mueser/stats-bot"
+        rel="external nofollow noopener" target="_blank"><font-awesome-icon :icon="['fas', 'code']" /></a></h1>
     <div class="general">
       <statsBot></statsBot>
     </div>
@@ -26,7 +26,8 @@
         To set up the bot, you need to create a new application on the
         <a class="highlight" href="https://discord.com/developers/applications" rel="external nofollow noopener"
           target="_blank">Discord Developer Portal</a>,
-        create a <code><span class="nowrap">.env</span></code> file in the root directory of the project and copy the token of the bot
+        create a <code><span class="nowrap">.env</span></code> file in the root directory of the project and copy the
+        token of the bot
         into this file like this:
         <code><span class="nowrap">TOKEN=xxx</span></code>.
       </p>
@@ -34,8 +35,10 @@
       <p>
         For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code> properties
         in the
-        <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord id's. <br>
-        Now you can run the bot with the argument <code><span class="nowrap">--test</span></code> to start the bot in development mode,
+        <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord
+        id's. <br>
+        Now you can run the bot with the argument <code><span class="nowrap">--test</span></code> to start the bot in
+        development mode,
         where new commands only get registered on your testServer. <br>
         Pay attention, that the already registered commands will still be available on all servers.
       </p>
@@ -47,11 +50,13 @@
         <code><span class="nowrap">npm run src/index.js</span></code>.
       </p>
       <p>
-        If you want to run the bot in development mode, you can run the command <code><span class="nowrap">npm run src/index.js --test</span></code>.
+        If you want to run the bot in development mode, you can run the command
+        <code><span class="nowrap">npm run src/index.js --test</span></code>.
       </p>
       <p>
-        If you don't want to develop the bot, you can also run the bot as a docker container from
-        <a class="highlight" href="https://hub.docker.com/r/paulmueser/statsbotdocker" rel="external nofollow noopener" target="_blank">docker hub</a> with the command
+        If you don't want to develop the bot, you can also run the bot as a <a class="highlight"
+          href="https://hub.docker.com/r/paulmueser/statsbotdocker" rel="external nofollow noopener"
+          target="_blank">docker container from docker hub</a> with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx paulmueser/statsbotdocker</span></code>.
       </p>
     </div>
@@ -78,36 +83,36 @@
 </template>
   
 <script>
-import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
-export default {
-  name: 'StatsBotView',
-  components: {
-    StatsBot
+  import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
+  export default {
+    name: 'StatsBotView',
+    components: {
+      StatsBot
+    }
   }
-}
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-  padding-top: 10px;
-  border-top: 1px solid var(--text-color);
-}
+  h2 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    padding-top: 10px;
+    border-top: 1px solid var(--text-color);
+  }
 
-h3 {
-  margin-bottom: 0;
-}
+  h3 {
+    margin-bottom: 0;
+  }
 
-p {
-  margin-top: 0;
-}
+  p {
+    margin-top: 0;
+  }
 
-ul {
-  margin-top: 0;
-}
+  ul {
+    margin-top: 0;
+  }
 
-.nowrap {
-  white-space: nowrap;
-}
+  .nowrap {
+    white-space: nowrap;
+  }
 </style>
