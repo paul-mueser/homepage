@@ -27,6 +27,10 @@
     transition: background-color .8s ease, color .8s ease;
   }
 
+  .router-link-active {
+    color: var(--text-color-highlight);
+  }
+
   a {
     color: var(--text-color);
     text-decoration: none;
