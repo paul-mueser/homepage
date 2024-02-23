@@ -13,15 +13,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .highlight {
-    color: var(--text-color-highlight);
-    text-decoration: none;
-    margin: 0;
-  }
-
-  .highlight:hover {
-    text-decoration: underline;
-  }
-</style>
