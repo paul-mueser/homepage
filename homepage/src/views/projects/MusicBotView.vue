@@ -8,7 +8,7 @@
     <div class="features">
       <h2>Features</h2>
       <p>
-        The bot can play music from youtube, soundcloud, apple music and spotify and has a queue system. It also has some commands to
+        The bot can play music from YouTube, SoundCloud, Apple Music and Spotify and has a queue system. It also has some commands to
         control the music and the bot itself.
       </p>
     </div>
