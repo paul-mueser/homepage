@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import StatsBot from '@/components/projects/StatsBot.vue'
-import MusicBot from '@/components/projects/MusicBot.vue'
-import Homepage from '@/components/projects/Homepage.vue'
+import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
+import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
+import Homepage from '@/components/projectDescriptions/Homepage.vue'
 export default {
   name: 'ProjectView',
   components: {
