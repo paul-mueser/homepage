@@ -81,6 +81,8 @@
     div.container {
       width: 100%;
       min-width: 100%;
+      margin-left: .5rem;
+      margin-right: 1rem;
     }
   }
 

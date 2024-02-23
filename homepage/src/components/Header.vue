@@ -4,13 +4,13 @@
         <div class="container">
           <div class="content">
             <div class="social" style="font-size: 2rem;">
-              <a href='mailto:info@paulmueser.de'>
+              <a href='mailto:kontakt@paulmueser.de' title="E-Mail">
                 <font-awesome-icon icon="fa-solid fa-envelope"/>
               </a>
-              <a href='https://github.com/paul-mueser' rel="external nofollow noopener" target="_blank">
+              <a href='https://github.com/paul-mueser' rel="external nofollow noopener" target="_blank" title="GitHub">
                 <font-awesome-icon icon="fa-brands fa-github"/>
               </a>
-              <a href='https://www.linkedin.com/in/paul-m%C3%BCser/' rel="external nofollow noopener" target="_blank">
+              <a href='https://www.linkedin.com/in/paul-m%C3%BCser/' rel="external nofollow noopener" target="_blank" title="LinkedIn">
                 <font-awesome-icon icon="fa-brands fa-linkedin"/>
               </a>
             </div>
@@ -20,7 +20,7 @@
               <theme-button></theme-button>
             </div>
             <div class="navbarDropdownNav">
-              <div @click="toggleDropdown()" style="font-size: 2rem; margin-right: 1rem; cursor: pointer;">
+              <div @click="toggleDropdown()" style="font-size: 2rem; margin-right: 1rem; cursor: pointer;" title="Navigation">
                 <font-awesome-icon :icon="['fas', 'bars']" v-show="!display"/>
                 <font-awesome-icon :icon="['fas', 'x']" v-show="display"/>
               </div>
@@ -119,6 +119,7 @@
     }
 
     .navbarDropdownNav {
+      margin-right: 1rem;
       display: flex;
       flex-direction: column;
       height: fit-content;
