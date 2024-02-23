@@ -1,7 +1,6 @@
 <template>
     <footer class="text-center text-white p-4">
       <div class="container">
-        <a>&copy; 2021</a>
         <router-link to="/legal">legal</router-link>
         <router-link to="/privacy">privacy</router-link>
       </div>
@@ -23,11 +22,6 @@
     color: white;
     text-align: center;
     background-color: rgb(31, 31, 31);
-  }
-
-  div.container {
-    margin-left: 170px;
-    margin-left: 170px;
   }
 
   a {

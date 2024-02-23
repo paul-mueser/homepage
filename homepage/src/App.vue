@@ -27,7 +27,12 @@
     color: rgb(228, 226, 226);
   }
 
-  div.content {
+  div.container {
+    box-sizing: border-box;
+    z-index: auto;
+    display: block;
+    line-height: 24px;
+    min-width: fit-content;
     margin-left: 170px;
     margin-right: 170px;
   }
