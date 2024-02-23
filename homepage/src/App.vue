@@ -3,7 +3,7 @@
   <div ref="body">
     <router-view/>
   </div>
-  <Footer></Footer>
+  <Footer ref="footer"></Footer>
 </template>
 
 <script>
@@ -17,20 +17,14 @@
 
     mounted() {
       this.headerHeight();
-      window.addEventListener('resize', this.heightListener);
-    },
-
-    unmounted() {
-      window.removeEventListener('resize', this.heightListener);
     },
 
     methods: {
-      heightListener(e) {
-        this.headerHeight();
-      },
       headerHeight() {
-        let header = this.$refs.header.$el.clientHeight ;
+        let header = this.$refs.header.$el.clientHeight;
+        let footer = this.$refs.footer.$el.clientHeight ;
         this.$refs.body.style.marginTop = (header + 16) + "px";
+        this.$refs.body.style.marginBottom = (footer + 16) + "px";
       }
     }
   }
@@ -52,7 +46,6 @@
   }
 
   body {
-    margin: 0px;
     height: 100%;
     width: 100%;
     min-height: 100%;
@@ -64,7 +57,7 @@
     transition: background-color .8s ease, color .8s ease;
   }
 
-  div.container {
+  .container {
     box-sizing: border-box;
     z-index: auto;
     display: flex;

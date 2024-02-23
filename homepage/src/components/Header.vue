@@ -8,8 +8,7 @@
               <a href='https://github.com/paul-mueser' rel="external nofollow noopener" target="_blank">GitHub</a> | 
               <a href='https://www.linkedin.com/in/paul-m%C3%BCser/' rel="external nofollow noopener" target="_blank">LinkedIn</a>
             </div>
-            <div class="navbar">
-              <div class="navbarNav">
+            <div class="navbarNav">
               <router-link to="/">overview</router-link>
               <router-link to="/projects">projects</router-link>
               <theme-button></theme-button>
@@ -22,7 +21,6 @@
                 <theme-button></theme-button>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </nav>
@@ -34,7 +32,6 @@
   export default {
     name: 'Header',
     components: {
-    ThemeButton,
     ThemeButton
   },
 
@@ -49,7 +46,6 @@
           dropdown.style.height = "fit-content";
           dropdown.style.alignItems = "self-end";
         }
-        this.$parent.headerHeight();
       }
     }
   };
@@ -63,7 +59,7 @@
     padding-top: 1rem;
     padding-bottom: .5rem;
     top: 0;
-    height: 30px;
+    height: fit-content;
     border-bottom: 1px solid var(--text-color); /* todo change to better boarder */
     color: var(--text-color);
     transition: background-color .8s ease, color .8s ease;
@@ -88,10 +84,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 800px) {
-    header {
-      height: fit-content;
-    }
+  @media screen and (max-width: 400px) {
     .navbarNav {
       display: none;
     }
