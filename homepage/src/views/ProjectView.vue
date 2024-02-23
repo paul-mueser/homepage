@@ -18,7 +18,7 @@
         <musicBot></musicBot>
         <router-link class="highlight" to="/projects/musicbot">More information</router-link>
       </div>
-      <div>
+      <div style="display: none;"> <!-- todo show the homepage project -->
         <h1 class="project">My Homepage</h1>
         <homepage></homepage>
         <a class="highlight" href="https://github.com/paul-mueser/homepage" rel="external nofollow noopener"
