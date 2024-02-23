@@ -1,6 +1,8 @@
 <template>
   <Header></Header>
-  <router-view/>
+  <div style="margin-top: 4.5rem; margin-bottom: 2rem;">
+    <router-view/>
+  </div>
   <Footer></Footer>
 </template>
 
@@ -25,6 +27,7 @@
     flex-direction: column;
     background-color: rgb(31, 31, 31);
     color: rgb(228, 226, 226);
+    margin: auto;
   }
 
   div.container {

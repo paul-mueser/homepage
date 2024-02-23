@@ -30,7 +30,9 @@
 
 <style scoped>
   header {
-    background-color: rgb(31, 31, 31);
+    position: fixed;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.911);
     padding-top: 1rem;
     padding-bottom: 1rem;
     top: 0;
