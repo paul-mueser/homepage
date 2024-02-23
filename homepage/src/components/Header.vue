@@ -3,10 +3,16 @@
       <nav>
         <div class="container">
           <div class="content">
-            <div class="social">
-              <a href='mailto:info@paulmueser.de'>Mail</a> |
-              <a href='https://github.com/paul-mueser' rel="external nofollow noopener" target="_blank">GitHub</a> | 
-              <a href='https://www.linkedin.com/in/paul-m%C3%BCser/' rel="external nofollow noopener" target="_blank">LinkedIn</a>
+            <div class="social" style="font-size: 2rem;">
+              <a href='mailto:info@paulmueser.de'>
+                <font-awesome-icon icon="fa-solid fa-envelope"/>
+              </a>
+              <a href='https://github.com/paul-mueser' rel="external nofollow noopener" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github"/>
+              </a>
+              <a href='https://www.linkedin.com/in/paul-m%C3%BCser/' rel="external nofollow noopener" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-linkedin"/>
+              </a>
             </div>
             <div class="navbarNav">
               <router-link to="/">overview</router-link>
@@ -14,11 +20,11 @@
               <theme-button></theme-button>
             </div>
             <div class="navbarDropdownNav">
-              <button class="dropbtn" @click="toggleDropdown()">Menu</button>
+              <font-awesome-icon :icon="['fas', 'bars']" @click="toggleDropdown()" style="font-size: 2rem; margin-right: 1rem;"/>
               <div class="dropdown-content">
                 <router-link to="/about">about</router-link>
                 <router-link to="/contact">contact</router-link>
-                <theme-button></theme-button>
+                <theme-button style="margin-right: 1rem;"></theme-button> <!-- todo fix wrong displayed icon -->
               </div>
             </div>
           </div>
@@ -38,6 +44,7 @@
     methods: {
       toggleDropdown() {
         var dropdown = document.querySelector(".dropdown-content");
+        var btn = document.querySelector(".btn");
         if (dropdown.style.display === "flex") {
           dropdown.style.display = "none";
         } else {
@@ -56,7 +63,7 @@
     position: fixed;
     width: 100%;
     background-color: var(--background-transparent);
-    padding-top: 1rem;
+    padding-top: .5rem;
     padding-bottom: .5rem;
     top: 0;
     height: fit-content;
@@ -80,6 +87,10 @@
     flex-direction: row;
   }
 
+  .navbarDropdown {
+    display: none;
+  }
+
   .navbarDropdownNav {
     display: none;
   }
@@ -87,6 +98,13 @@
   @media screen and (max-width: 400px) {
     .navbarNav {
       display: none;
+    }
+
+    .navbarDropdown {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: top;
     }
 
     .navbarDropdownNav {
