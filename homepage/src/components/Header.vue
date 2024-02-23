@@ -20,11 +20,15 @@
               <theme-button></theme-button>
             </div>
             <div class="navbarDropdownNav">
-              <font-awesome-icon :icon="['fas', 'bars']" @click="toggleDropdown()" style="font-size: 2rem; margin-right: 1rem;"/>
+              <div @click="toggleDropdown()" style="font-size: 2rem; margin-right: 1rem; cursor: pointer;">
+                <font-awesome-icon :icon="['fas', 'bars']" v-show="!display"/>
+                <font-awesome-icon :icon="['fas', 'x']" v-show="display"/>
+              </div>
+              
               <div class="dropdown-content">
-                <router-link to="/about">about</router-link>
-                <router-link to="/contact">contact</router-link>
-                <theme-button style="margin-right: 1rem;"></theme-button> <!-- todo fix wrong displayed icon -->
+                <router-link to="/">overview</router-link>
+                <router-link to="/projects">projects</router-link>
+                <theme-button style="margin-right: .5rem;"></theme-button>
               </div>
             </div>
           </div>
@@ -39,19 +43,26 @@
     name: 'Header',
     components: {
     ThemeButton
-  },
+    },
+
+    data() {
+      return {
+        display: false
+      }
+    },
 
     methods: {
       toggleDropdown() {
         var dropdown = document.querySelector(".dropdown-content");
-        var btn = document.querySelector(".btn");
-        if (dropdown.style.display === "flex") {
+        this.display = dropdown.style.display !== "flex";
+        if (!this.display) {
           dropdown.style.display = "none";
         } else {
           dropdown.style.display = "flex";
           dropdown.style.flexDirection = "column";
           dropdown.style.height = "fit-content";
           dropdown.style.alignItems = "self-end";
+          dropdown.style.marginRight = "5px"
         }
       }
     }
@@ -95,7 +106,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     .navbarNav {
       display: none;
     }
@@ -117,6 +128,10 @@
 
   .dropdown-content {
     display: none;
+  }
+
+  .router-link-active {
+    color: var(--text-color-highlight);
   }
 
   a {

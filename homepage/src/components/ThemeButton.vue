@@ -2,12 +2,7 @@
     <div>
         <input @change="toggleTheme" id="checkbox" type="checkbox" class="switch-checkbox"/>
             <label for="checkbox" class="switch-label" title="Change theme">
-                <span v-if="userTheme==='light-theme'">
-                    <font-awesome-icon icon="fa-solid fa-moon" />
-                </span>
-                <span v-if="userTheme==='dark-theme'">
-                    <font-awesome-icon icon="fa-solid fa-sun" />
-                </span>
+                <font-awesome-icon icon="fa-solid fa-sun"/>
             </label>
     </div>
 </template>
