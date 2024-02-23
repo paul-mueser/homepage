@@ -9,14 +9,7 @@
     <div class="projects">
       <statsBot></statsBot>
       <musicBot></musicBot>
-      
-      <div class="project">
-        <h1>Project 3</h1>
-        <p>
-          This is a project I have been working on for a while. It is a web application that allows users to create and manage their own projects.
-        </p>
-        <a href="#">More information</a>
-      </div>
+      <homepage></homepage>
     </div>
   </div>
 </template>
@@ -24,11 +17,13 @@
 <script>
 import StatsBot from '@/components/projects/StatsBot.vue'
 import MusicBot from '@/components/projects/MusicBot.vue'
+import Homepage from '@/components/projects/Homepage.vue'
 export default {
   name: 'ProjectView',
   components: {
     StatsBot,
-    MusicBot
+    MusicBot,
+    Homepage
   }
 }
 </script>
