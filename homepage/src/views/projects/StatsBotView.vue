@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <h1>Discord Stats Bot <a class="highlight" href="https://github.com/paul-mueser/stats-bot"
-        rel="external nofollow noopener" target="_blank"><font-awesome-icon :icon="['fas', 'code']" /></a></h1>
+                             rel="external nofollow noopener" target="_blank">
+      <font-awesome-icon :icon="['fas', 'code']"/>
+    </a></h1>
     <div class="general">
       <statsBot></statsBot>
     </div>
@@ -9,7 +11,8 @@
       <h2>Features</h2>
       <ul>
         <li>Moderation: you can timeout, kick and ban users</li>
-        <li>Quotes: get stats of the authors of the quotes, get all quotes of a specific author and get the general stats
+        <li>Quotes: get stats of the authors of the quotes, get all quotes of a specific author and get the general
+          stats
         </li>
       </ul>
     </div>
@@ -25,7 +28,7 @@
       <p>
         To set up the bot, you need to create a new application on the
         <a class="highlight" href="https://discord.com/developers/applications" rel="external nofollow noopener"
-          target="_blank">Discord Developer Portal</a>,
+           target="_blank">Discord Developer Portal</a>,
         create a <code><span class="nowrap">.env</span></code> file in the root directory of the project and copy the
         token of the bot
         into this file like this:
@@ -33,7 +36,8 @@
       </p>
       <h3>Developing &amp; Testing</h3>
       <p>
-        For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code> properties
+        For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code>
+        properties
         in the
         <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord
         id's. <br>
@@ -55,8 +59,10 @@
       </p>
       <p>
         If you don't want to develop the bot, you can also run the bot as a <a class="highlight"
-          href="https://hub.docker.com/r/paulmueser/statsbotdocker" rel="external nofollow noopener"
-          target="_blank">docker container from docker hub</a> with the command
+                                                                               href="https://hub.docker.com/r/paulmueser/statsbotdocker"
+                                                                               rel="external nofollow noopener"
+                                                                               target="_blank">docker container from
+        docker hub</a> with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx paulmueser/statsbotdocker</span></code>.
       </p>
     </div>
@@ -81,38 +87,39 @@
     </div>
   </div>
 </template>
-  
+
 <script>
-  import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
-  export default {
-    name: 'StatsBotView',
-    components: {
-      StatsBot
-    }
+import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
+
+export default {
+  name: 'StatsBotView',
+  components: {
+    StatsBot
   }
+}
 </script>
 
 <style scoped>
-  h2 {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    padding-top: 10px;
-    border-top: 1px solid var(--text-color);
-  }
+h2 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  padding-top: 10px;
+  border-top: 1px solid var(--text-color);
+}
 
-  h3 {
-    margin-bottom: 0;
-  }
+h3 {
+  margin-bottom: 0;
+}
 
-  p {
-    margin-top: 0;
-  }
+p {
+  margin-top: 0;
+}
 
-  ul {
-    margin-top: 0;
-  }
+ul {
+  margin-top: 0;
+}
 
-  .nowrap {
-    white-space: nowrap;
-  }
+.nowrap {
+  white-space: nowrap;
+}
 </style>

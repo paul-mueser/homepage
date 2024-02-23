@@ -22,7 +22,7 @@
         <h1 class="project">My Homepage</h1>
         <homepage></homepage>
         <a class="highlight" href="https://github.com/paul-mueser/homepage" rel="external nofollow noopener"
-          target="_blank">More information</a>
+           target="_blank">More information</a>
       </div>
     </div>
   </div>
@@ -32,6 +32,7 @@
 import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
 import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
 import Homepage from '@/components/projectDescriptions/Homepage.vue'
+
 export default {
   name: 'ProjectView',
   components: {

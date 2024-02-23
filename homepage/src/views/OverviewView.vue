@@ -8,6 +8,7 @@
 <script>
 import Personal from '@/components/overview/Personal.vue'
 import ProjectShowcase from '@/components/overview/ProjectShowcase.vue'
+
 export default {
   name: 'HomeView',
   components: {

@@ -1,14 +1,17 @@
 <template>
   <div class="container">
     <h1>Discord Music Bot <a class="highlight" href="https://github.com/paul-mueser/music-bot"
-        rel="external nofollow noopener" target="_blank"><font-awesome-icon :icon="['fas', 'code']" /></a></h1>
+                             rel="external nofollow noopener" target="_blank">
+      <font-awesome-icon :icon="['fas', 'code']"/>
+    </a></h1>
     <div class="general">
       <musicBot></musicBot>
     </div>
     <div class="features">
       <h2>Features</h2>
       <p>
-        The bot can play music from YouTube, SoundCloud, Apple Music and Spotify and has a queue system. It also has some commands to
+        The bot can play music from YouTube, SoundCloud, Apple Music and Spotify and has a queue system. It also has
+        some commands to
         control the music and the bot itself.
       </p>
     </div>
@@ -19,14 +22,15 @@
         To run the bot, you need to have Node.js installed on your machine. You can download it from the official
         <a class="highlight" href="https://nodejs.org/en/" rel="external nofollow noopener" target="_blank">Node.js
           website</a>.
-        You also need to have ffmpeg installed on your machine. You can download it from the official <a class="highlight"
+        You also need to have ffmpeg installed on your machine. You can download it from the official <a
+          class="highlight"
           href="https://ffmpeg.org/download.html" rel="external nofollow noopener" target="_blank">ffmpeg website</a>.
       </p>
       <h3>Setup</h3>
       <p>
         To set up the bot, you need to create a new application on the
         <a class="highlight" href="https://discord.com/developers/applications" rel="external nofollow noopener"
-          target="_blank">Discord Developer Portal</a>,
+           target="_blank">Discord Developer Portal</a>,
         create a <code><span class="nowrap">.env</span></code> file in the root directory of the project and copy the
         token of the bot
         into this file like this:
@@ -34,7 +38,8 @@
       </p>
       <h3>Developing &amp; Testing</h3>
       <p>
-        For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code> properties
+        For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code>
+        properties
         in the
         <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord
         id's. <br>
@@ -56,8 +61,10 @@
       </p>
       <p>
         If you don't want to develop the bot, you can also run the bot as a <a class="highlight"
-          href="https://hub.docker.com/r/paulmueser/musicbotdocker" rel="external nofollow noopener"
-          target="_blank">docker container from docker hub</a> with the command
+                                                                               href="https://hub.docker.com/r/paulmueser/musicbotdocker"
+                                                                               rel="external nofollow noopener"
+                                                                               target="_blank">docker container from
+        docker hub</a> with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx paulmueser/musicbotdocker</span></code>.
       </p>
     </div>
@@ -78,38 +85,39 @@
     </div>
   </div>
 </template>
-  
+
 <script>
-  import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
-  export default {
-    name: 'MusicBotView',
-    components: {
-      MusicBot
-    }
+import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
+
+export default {
+  name: 'MusicBotView',
+  components: {
+    MusicBot
   }
+}
 </script>
 
 <style scoped>
-  h2 {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    padding-top: 10px;
-    border-top: 1px solid var(--text-color);
-  }
+h2 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  padding-top: 10px;
+  border-top: 1px solid var(--text-color);
+}
 
-  h3 {
-    margin-bottom: 0;
-  }
+h3 {
+  margin-bottom: 0;
+}
 
-  p {
-    margin-top: 0;
-  }
+p {
+  margin-top: 0;
+}
 
-  ul {
-    margin-top: 0;
-  }
+ul {
+  margin-top: 0;
+}
 
-  .nowrap {
-    white-space: nowrap;
-  }
+.nowrap {
+  white-space: nowrap;
+}
 </style>
