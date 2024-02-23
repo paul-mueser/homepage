@@ -7,12 +7,11 @@
                 Paul M&uuml;ser <br>
                 Dorfstra&szlig;e 16<br>
                 59556 Lippstadt <br>
-                Paul M&uuml;ser<br>
             </p>
             <p>
                 <strong>Kontakt:</strong> <br>
                 Telefon: +491757261517<br>
-                E-Mail: <a href='mailto:info@paulmueser.de'>info@paulmueser.de</a><br>
+                E-Mail: <a class="highlight" href='mailto:info@paulmueser.de'>info@paulmueser.de</a><br>
             </p>
             <p>
                 <strong>Haftungsausschluss: </strong><br><br>
@@ -70,7 +69,7 @@
                 Schritte im
                 Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
             </p><br>
-            Website Impressum von <a href="https://www.impressum-generator.de">impressum-generator.de</a>
+            Website Impressum von <a class="highlight" href="https://www.impressum-generator.de">impressum-generator.de</a>
         </div>
     </div>
 </template>
