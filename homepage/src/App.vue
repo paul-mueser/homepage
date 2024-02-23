@@ -55,6 +55,7 @@
     color: var(--text-color);
     margin: auto;
     transition: background-color .8s ease, color .8s ease;
+    font-family: 'Roboto';
   }
 
   .container {
