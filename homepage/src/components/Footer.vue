@@ -1,8 +1,10 @@
 <template>
     <footer class="text-center text-white p-4">
       <div class="container">
-        <router-link to="/legal">legal</router-link>
-        <router-link to="/privacy">privacy</router-link>
+        <div class="content">
+          <router-link to="/legal">legal</router-link>
+          <router-link to="/privacy">privacy</router-link>
+        </div>
       </div>
     </footer>
 </template>
@@ -19,18 +21,20 @@
     width: 100%;
     bottom: 0;
     padding-bottom: .5rem;
-    color: white;
     text-align: center;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color .8s ease, color .8s ease;
   }
 
   a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     margin: 0 10px;
+    transition: background-color .8s ease, color .8s ease;
   }
 
   a:hover {
-    color: rgb(0, 162, 255);
+    color: var(--text-color-highlight);
   }
 </style>

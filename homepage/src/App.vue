@@ -1,6 +1,6 @@
 <template>
-  <Header></Header>
-  <div style="margin-top: 4.5rem; margin-bottom: 2rem;">
+  <Header ref="header"></Header>
+  <div ref="body">
     <router-view/>
   </div>
   <Footer></Footer>
@@ -13,11 +13,44 @@
     components: {
       Header,
       Footer
+    },
+
+    mounted() {
+      this.headerHeight();
+      window.addEventListener('resize', this.heightListener);
+    },
+
+    unmounted() {
+      window.removeEventListener('resize', this.heightListener);
+    },
+
+    methods: {
+      heightListener(e) {
+        this.headerHeight();
+      },
+      headerHeight() {
+        let header = this.$refs.header.$el.clientHeight ;
+        this.$refs.body.style.marginTop = (header + 16) + "px";
+      }
     }
   }
 </script>
 
 <style>
+  :root {
+    --background-color: white;
+    --background-transparent: rgba(255, 255, 255, 0.911);
+    --text-color: black;
+    --text-color-highlight: rgb(0, 162, 255);
+    --element-size: 30px;
+  }
+
+  :root.dark-theme {
+    --background-color: rgb(31, 31, 31);
+    --background-transparent: rgba(31, 31, 31, 0.911);
+    --text-color: rgb(228, 226, 226);
+  }
+
   body {
     margin: 0px;
     height: 100%;
@@ -25,18 +58,35 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(31, 31, 31);
-    color: rgb(228, 226, 226);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: auto;
+    transition: background-color .8s ease, color .8s ease;
   }
 
   div.container {
     box-sizing: border-box;
     z-index: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
     line-height: 24px;
-    min-width: fit-content;
-    margin-left: 170px;
-    margin-right: 170px;
+    width: 44%;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .findGoodName {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    div.container {
+      width: 100%;
+      min-width: 100%;
+    }
   }
 </style>
