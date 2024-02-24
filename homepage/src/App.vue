@@ -20,6 +20,15 @@ export default {
 
   mounted() {
     this.headerHeight();
+    document.addEventListener('DOMContentLoaded', function() {
+      var scrollpos = sessionStorage.getItem('scrollpos');
+      if (scrollpos) window.scrollTo(0, scrollpos);
+      sessionStorage.removeItem('scrollpos');
+    });
+
+    window.onbeforeunload = function(e) {
+      sessionStorage.setItem('scrollpos', window.scrollY);
+    };
   },
 
   methods: {
@@ -60,14 +69,11 @@ body {
 }
 
 .background {
-  position: fixed;
-  flex: 1;
-  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--background-color);
-  width: 100%;
-  height: 100%;
   transition: background-color .8s ease, color .8s ease;
-  overflow-y: scroll;
 }
 
 .container {

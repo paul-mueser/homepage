@@ -11,12 +11,24 @@
       <div>
         <h1 class="project">Discord Stats Bot</h1>
         <statsBot></statsBot>
-        <router-link class="highlight" to="/projects/statsbot">More information</router-link>
+        <div class="links">
+          <router-link class="highlight" to="/projects/statsbot">More information</router-link>
+          <a class="divider">|</a>
+          <a class="highlight" href="" rel="external nofollow noopener" target="_blank">Report Bugs</a>
+          <a class="divider">|</a>
+          <a class="highlight" href="" rel="external nofollow noopener" target="_blank">Request Features</a>
+        </div>
       </div>
       <div>
         <h1 class="project">Discord Music Bot</h1>
         <musicBot></musicBot>
-        <router-link class="highlight" to="/projects/musicbot">More information</router-link>
+        <div class="links">
+          <router-link class="highlight" to="/projects/musicbot">More information</router-link>
+          <a class="divider">|</a>
+          <a class="highlight" href="" rel="external nofollow noopener" target="_blank">Report Bugs</a>
+          <a class="divider">|</a>
+          <a class="highlight" href="" rel="external nofollow noopener" target="_blank">Request Features</a>
+        </div>
       </div>
       <div style="display: none;"> <!-- todo show the homepage project -->
         <h1 class="project">My Homepage</h1>
@@ -53,5 +65,15 @@ h1 {
 
 .project {
   border-top: 1px solid var(--text-color);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 </style>
