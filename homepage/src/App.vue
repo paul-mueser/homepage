@@ -1,7 +1,9 @@
 <template>
   <Header ref="header"></Header>
-  <div ref="body">
-    <router-view/>
+  <div class="background">
+    <div ref="body">
+      <router-view/>
+    </div>
   </div>
   <Footer ref="footer"></Footer>
 </template>
@@ -52,11 +54,20 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
-  transition: background-color .8s ease, color .8s ease;
   font-family: 'Roboto';
+}
+
+.background {
+  position: fixed;
+  flex: 1;
+  z-index: -1;
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  transition: background-color .8s ease, color .8s ease;
+  overflow-y: scroll;
 }
 
 .container {
