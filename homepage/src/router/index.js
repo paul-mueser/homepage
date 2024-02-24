@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 import OverviewView from '../views/OverviewView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import StatsBotView from '../views/projects/StatsBotView.vue'
@@ -40,7 +40,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHashHistory(process.env.BASE_URL),
     routes
 })
 
