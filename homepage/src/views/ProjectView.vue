@@ -34,19 +34,10 @@
           rel="external nofollow noopener" target="_blank">Request Features</a>
         </div>
       </div>
-      <div style="display: none;"> <!-- todo show the homepage project -->
+      <div>
         <h1 class="project">My Homepage</h1>
         <homepage></homepage>
-        <div class="links">
-          <a class="highlight" href="https://github.com/paul-mueser/homepage" rel="external nofollow noopener"
-           target="_blank">More information</a> <!-- todo replace with router link -->
-           <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/music-bot/issues/new?assignees=paul-mueser&labels=bug&projects=&template=bug_report.md&title=%5BBUG%5D+" 
-          rel="external nofollow noopener" target="_blank">Report Bugs</a>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/music-bot/issues/new?assignees=paul-mueser&labels=enhancement&projects=&template=feature_request.md&title=%5BFEATURE%5D+" 
-          rel="external nofollow noopener" target="_blank">Request Features</a>
-        </div>
+        If your having problems with this site or want to report any issues please write me <a class="highlight" href="mailto:website@paulmueser.de">here</a>.
       </div>
     </div>
   </div>
