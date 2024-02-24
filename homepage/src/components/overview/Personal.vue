@@ -1,7 +1,7 @@
 <template>
   <div class="personal">
     <h1 class="text-center">Paul Müser</h1>
-    <p>Hi! I'm a student at Paderborn University. I like to <a class="highlight" href="https://github.com/paul-mueser"
+    <p>Hi! I'm a computer science student at Paderborn University. I like to <a class="highlight" href="https://github.com/paul-mueser"
                                                                rel="external nofollow noopener" target="_blank">code in
       my freetime</a>
       and on this website I will share some of my projects with you. I hope you enjoy your stay!</p>
