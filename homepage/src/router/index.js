@@ -10,32 +10,38 @@ const routes = [
     {
         path: '/',
         name: 'overview',
-        component: OverviewView
+        component: OverviewView,
+        meta: {title: 'Home'}
     },
     {
         path: '/projects',
         name: 'projects',
-        component: ProjectView
+        component: ProjectView,
+        meta: {title: 'Projects'}
     },
     {
         path: '/projects/statsbot',
         name: 'statsbot',
-        component: StatsBotView
+        component: StatsBotView,
+        meta: {title: 'Statsbot'}
     },
     {
         path: '/projects/musicbot',
         name: 'musicbot',
-        component: MusicBotView
+        component: MusicBotView,
+        meta: {title: 'Musicbot'}
     },
     {
         path: '/legal',
         name: 'legal',
-        component: LegalView
+        component: LegalView,
+        meta: {title: 'Legal'}
     },
     {
         path: '/privacy',
         name: 'privacy',
-        component: PrivacyView
+        component: PrivacyView,
+        meta: {title: 'Privacy'}
     }
 ]
 
@@ -46,5 +52,9 @@ const router = createRouter({
         return { top: 0 }
     }
 })
+
+router.afterEach((to, from) => {
+    document.title = to.meta.title + ' | Paul Müser' || 'Paul Müser';
+});
 
 export default router

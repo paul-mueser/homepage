@@ -1,6 +1,6 @@
 <template>
   <head>
-    <title>Paul Müser | Home</title>
+    <title>Home | Paul Müser</title>
   </head>
   <Header ref="header"></Header>
   <div class="background">
