@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <title>Paul Müser | Home</title>
+  </head>
   <Header ref="header"></Header>
   <div class="background">
     <div ref="body">

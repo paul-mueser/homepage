@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1 class="text-center">Paul Müser</h1>
     <personal></personal>
     <project-showcase></project-showcase>
   </div>
