@@ -4,9 +4,10 @@ const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const paths = [
     '/',
-    '/projects/',
-    '/projects/statsbot/',
-    '/projects/musicbot/',
+    '/#/',
+    '/#/projects/',
+    '/#/projects/statsbot/',
+    '/#/projects/musicbot/',
 ]
 
 module.exports = defineConfig({
