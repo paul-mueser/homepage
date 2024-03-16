@@ -30,9 +30,9 @@
         <a class="highlight" href="https://discord.com/developers/applications" rel="external nofollow noopener"
            target="_blank">Discord Developer Portal</a>,
         create a <code><span class="nowrap">.env</span></code> file in the root directory of the project and copy the
-        token of the bot
-        into this file like this:
-        <code><span class="nowrap">TOKEN=xxx</span></code>.
+        token of the bot and it's discord id into the file like this: <br>
+        <code><span class="nowrap">TOKEN=xxx</span></code> <br>
+        <code><span class="nowrap">BOT_ID=xxx</span></code>.
       </p>
       <h3>Developing &amp; Testing</h3>
       <p>
@@ -63,13 +63,14 @@
                                                                                rel="external nofollow noopener"
                                                                                target="_blank">docker container from
         docker hub</a> with the command
-        <code><span class="nowrap">docker run -d --env TOKEN=xxx paulmueser/statsbotdocker</span></code>.
+        <code><span class="nowrap">docker run -d --env TOKEN=xxx --env BOT_ID=xxx paulmueser/statsbotdocker</span></code>.
       </p>
     </div>
     <div class="commands">
       <h2>Commands</h2>
       <h3 id="misc">Misc</h3>
       <ul>
+        <li>leaderboard - replies with the leaderboard of the whole server</li>
         <li>ping - Pong!</li>
       </ul>
       <h3 id="moderation">Moderation</h3>
@@ -81,6 +82,7 @@
       <h3 id="quotes">Quotes</h3>
       <ul>
         <li>authorstats - replies with the authorstats of &quot;Zitate&quot;</li>
+        <li>quote {date} {content} {author} - create a new quote</li>
         <li>quoteby {author} - replies with the quotes of a specific person</li>
         <li>stats - replies with the stats of &quot;Zitate&quot;</li>
       </ul>
