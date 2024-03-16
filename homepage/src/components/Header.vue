@@ -14,6 +14,10 @@
                title="LinkedIn">
               <font-awesome-icon icon="fa-brands fa-linkedin"/>
             </a>
+            <a href='https://gitlab.com/paul-mueser' rel="external nofollow noopener" target="_blank"
+               title="GitLab">
+              <font-awesome-icon icon="fa-brands fa-gitlab"/>
+            </a>
           </div>
           <div class="navbarNav">
             <router-link to="/">overview</router-link>
