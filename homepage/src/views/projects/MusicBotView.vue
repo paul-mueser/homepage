@@ -11,8 +11,7 @@
       <h2>Features</h2>
       <p>
         The bot can play music from YouTube, SoundCloud, Apple Music and Spotify and has a queue system. It also has
-        some commands to
-        control the music and the bot itself.
+        some commands and buttons to control the music and the bot itself.
       </p>
     </div>
     <div class="beforeStarting">
@@ -60,11 +59,12 @@
         <code><span class="nowrap">npm run src/index.js --test</span></code>.
       </p>
       <p>
-        If you don't want to develop the bot, you can also run the bot as a <a class="highlight"
-                                                                               href="https://hub.docker.com/r/paulmueser/musicbotdocker"
-                                                                               rel="external nofollow noopener"
-                                                                               target="_blank">docker container from
-        docker hub</a> with the command
+        If you don't want to develop the bot, you can also run the bot as a 
+        <a class="highlight" href="https://hub.docker.com/r/paulmueser/musicbotdocker" 
+          rel="external nofollow noopener" target="_blank">
+          docker container from docker hub
+        </a>
+        with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx paulmueser/musicbotdocker</span></code>.
       </p>
     </div>
@@ -78,6 +78,7 @@
       <ul>
         <li>play {song} - plays a song</li>
         <li>pause - pauses the music</li>
+        <li>queue - shows the current queue</li>
         <li>resume - resumes the music</li>
         <li>skip - skips the current song</li>
         <li>stop - stops playing music and disconnects from the channel</li>

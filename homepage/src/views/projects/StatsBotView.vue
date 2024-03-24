@@ -42,8 +42,7 @@
         <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord
         id's. <br>
         Now you can run the bot with the argument <code><span class="nowrap">--test</span></code> to start the bot in
-        development mode,
-        where new commands only get registered on your testServer. <br>
+        development mode, where new commands only get registered on your testServer. <br>
         Pay attention, that the already registered commands will still be available on all servers.
       </p>
     </div>
@@ -58,11 +57,12 @@
         <code><span class="nowrap">npm run src/index.js --test</span></code>.
       </p>
       <p>
-        If you don't want to develop the bot, you can also run the bot as a <a class="highlight"
-                                                                               href="https://hub.docker.com/r/paulmueser/statsbotdocker"
-                                                                               rel="external nofollow noopener"
-                                                                               target="_blank">docker container from
-        docker hub</a> with the command
+        If you don't want to develop the bot, you can also run the bot as a
+        <a class="highlight" href="https://hub.docker.com/r/paulmueser/statsbotdocker"
+          rel="external nofollow noopener" target="_blank">
+          docker container from docker hub
+        </a>
+        with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx --env BOT_ID=xxx paulmueser/statsbotdocker</span></code>.
       </p>
     </div>
