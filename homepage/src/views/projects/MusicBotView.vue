@@ -80,8 +80,10 @@
         <li>pause - pauses the music</li>
         <li>queue - shows the current queue</li>
         <li>resume - resumes the music</li>
+        <li>shuffle - shuffles the queue</li>
         <li>skip - skips the current song</li>
         <li>stop - stops playing music and disconnects from the channel</li>
+        <li>toggleloop - toggles the loop mode</li>
       </ul>
     </div>
   </div>
