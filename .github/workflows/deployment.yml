@@ -1,8 +1,5 @@
 name: Deployment
 
-workspace:
-  clean: all
-
 on:
   release:
     types: [released]
@@ -11,6 +8,8 @@ jobs:
   deploy:
     name: Deployment
     runs-on: self-hosted
+    workspace:
+      clean: all
 
     steps:
       - uses: actions/checkout@v1
