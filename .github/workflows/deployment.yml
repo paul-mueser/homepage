@@ -8,8 +8,6 @@ jobs:
   deploy:
     name: Deployment
     runs-on: self-hosted
-    workspace:
-      clean: all
 
     steps:
       - uses: TooMuch4U/runner-post-cleanup@v2.1
