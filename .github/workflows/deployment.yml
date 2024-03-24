@@ -12,6 +12,8 @@ jobs:
       clean: all
 
     steps:
+      - uses: TooMuch4U/runner-post-cleanup@v2.1
+      
       - uses: actions/checkout@v1
 
       - name: Set up Node.js
