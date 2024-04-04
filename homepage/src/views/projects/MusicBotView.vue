@@ -76,8 +76,9 @@
       </ul>
       <h3 id="quotes">Music control</h3>
       <ul>
-        <li>play {song} - plays a song</li>
+        <li>ghostbusters - plays the ghostbusters theme on repeat</li>
         <li>pause - pauses the music</li>
+        <li>play {song} - plays a song</li>
         <li>queue - shows the current queue</li>
         <li>resume - resumes the music</li>
         <li>shuffle - shuffles the queue</li>
