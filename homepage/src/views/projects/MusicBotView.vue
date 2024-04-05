@@ -77,6 +77,8 @@
       <h3 id="quotes">Music control</h3>
       <ul>
         <li>ghostbusters - plays the ghostbusters theme on repeat</li>
+        <li>ketchup - plays the ketchup song on repeat</li>
+        <li>lillifee - plays the lillifee song on repeat</li>
         <li>pause - pauses the music</li>
         <li>play {song} - plays a song</li>
         <li>queue - shows the current queue</li>
@@ -85,6 +87,7 @@
         <li>skip - skips the current song</li>
         <li>stop - stops playing music and disconnects from the channel</li>
         <li>toggleloop - toggles the loop mode</li>
+        <li>whosthatwonderfulgirl - plays the song "Who's that wonderful girl" on repeat</li>
       </ul>
     </div>
   </div>
