@@ -36,11 +36,12 @@
       </p>
       <h3>Developing &amp; Testing</h3>
       <p>
-        For testing, you can change the <code><span>testServer</span></code> and <code><span>devs</span></code>
+        For testing, you can change the <code><span class="nowrap">testServer</span></code> and <code><span class="nowrap">devs</span></code>
         properties
         in the
-        <code><span class="nowrap">config.json</span></code> file to to your test server id and your developers discord
-        id's. <br>
+        <code><span class="nowrap">config.json</span></code> file to your test server id and your developers discord
+        id's. There you can also change the <code><span class="nowrap">quoteLeaderRoleName</span></code>, which is the role for the person
+        with the most quotes in the current week. <br>
         Now you can run the bot with the argument <code><span class="nowrap">--test</span></code> to start the bot in
         development mode, where new commands only get registered on your testServer. <br>
         Pay attention, that the already registered commands will still be available on all servers.
