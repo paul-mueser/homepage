@@ -11,8 +11,7 @@
       <h2>Features</h2>
       <ul>
         <li>Moderation: you can timeout, kick and ban users</li>
-        <li>Quotes: get stats of the authors of the quotes, get all quotes of a specific author and get the general
-          stats
+        <li>Quotes: get stats of the authors of the quotes, get all quotes of a specific author and much more
         </li>
       </ul>
     </div>

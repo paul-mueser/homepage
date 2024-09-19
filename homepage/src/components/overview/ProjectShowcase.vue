@@ -7,7 +7,7 @@
           <router-link to="/projects/statsbot" class="highlight">Discord Stats Bot</router-link>
         </h3>
         <p style="margin-top: 0;">
-          This is a basic Discord bot primarily used for gathering statistics from a channel in a Discord server calles
+          This is a basic Discord bot primarily used for gathering statistics from a channel in a Discord server called
           &quot;Zitate&quot;, where users can post quotes.
         </p>
       </div>
@@ -16,7 +16,7 @@
           <router-link to="/projects/musicbot" class="highlight">Discord Music Bot</router-link>
         </h3>
         <p style="margin-top: 0;">
-          This is a basic Discord music bot that can play music from YouTube and other sources.
+          This is a basic Discord music bot that can play music from multiple sources.
         </p>
       </div>
     </div>

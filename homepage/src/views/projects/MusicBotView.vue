@@ -76,16 +76,20 @@
       </ul>
       <h3 id="quotes">Music control</h3>
       <ul>
+        <li>bereit - plays "be prepared" from "The Lion King" (german version) on repeat</li>
         <li>ghostbusters - plays the ghostbusters theme on repeat</li>
         <li>ketchup - plays the ketchup song on repeat</li>
-        <li>lillifee - plays the lillifee song on repeat</li>
+        <li>lillifee - plays the lillifee dance on repeat</li>
+        <li>metronom - plays the metronom song on repeat</li>
         <li>pause - pauses the music</li>
         <li>play {song} - plays a song</li>
         <li>queue - shows the current queue</li>
         <li>resume - resumes the music</li>
+        <li>scar - plays "The Madness of King Scar" from "The Lion King" (german version) on repeat</li>
         <li>shuffle - shuffles the queue</li>
         <li>skip - skips the current song</li>
         <li>stop - stops playing music and disconnects from the channel</li>
+        <li>surprise - plays a random song from the surprise list (see <code><span class="nowrap">surprise.js</span></code>)</li>
         <li>toggleloop - toggles the loop mode</li>
         <li>whosthatwonderfulgirl - plays the song "Who's that wonderful girl" on repeat</li>
       </ul>
