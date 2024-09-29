@@ -81,10 +81,10 @@
       </ul>
       <h3 id="quotes">Quotes</h3>
       <ul>
-        <li>authorstats - replies with the authorstats of &quot;Zitate&quot;</li>
+        <li>authorstats - replies with the authorstats of &quot;zitate&quot;/&quot;quotes&quot;</li>
         <li>quote {date} {content} {author} - create a new quote</li>
         <li>quoteby {author} - replies with the quotes of a specific person</li>
-        <li>stats - replies with the stats of &quot;Zitate&quot;</li>
+        <li>stats - replies with the stats of &quot;zitate&quot;/&quot;quotes&quot;</li>
       </ul>
     </div>
   </div>
