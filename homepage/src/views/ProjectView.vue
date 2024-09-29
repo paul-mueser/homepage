@@ -19,6 +19,9 @@
           <a class="divider">|</a>
           <a class="highlight" href="https://github.com/paul-mueser/stats-bot/issues/new?assignees=paul-mueser&labels=enhancement&projects=&template=feature_request.md&title=%5BFEATURE%5D+" 
           rel="external nofollow noopener" target="_blank">Request Features</a>
+          <a class="divider">|</a>
+          <a class="highlight" href="https://discord.com/oauth2/authorize?client_id=1207711066247921766" 
+          rel="external nofollow noopener" target="_blank">Invite to Discord</a>
         </div>
       </div>
       <div>

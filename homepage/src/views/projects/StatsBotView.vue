@@ -65,6 +65,13 @@
         with the command
         <code><span class="nowrap">docker run -d --env TOKEN=xxx --env BOT_ID=xxx paulmueser/statsbotdocker</span></code>.
       </p>
+      <p>
+        If you don't want to run the bot yourself you can directly
+        <a class="highlight" href="https://discord.com/oauth2/authorize?client_id=1207711066247921766" rel="external nofollow noopener" target="_blank">
+          invite the bot
+        </a>
+        to your server.
+      </p>
     </div>
     <div class="commands">
       <h2>Commands</h2>
