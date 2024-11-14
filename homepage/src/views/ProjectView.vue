@@ -38,6 +38,16 @@
         </div>
       </div>
       <div>
+        <h1 class="project">Fact Checking Engine</h1>
+        <factCheckingEngine></factCheckingEngine>
+        <div class="links">
+          <router-link class="highlight" to="/projects/factCheckingEngine">More information</router-link>
+          <a class="divider">|</a>
+          <a class="highlight" href="https://github.com/paul-mueser/SW-Fact-Checking-Engine/issues/new?assignees=paul-mueser&labels=bug&projects=&title=%5BBUG%5D+" 
+          rel="external nofollow noopener" target="_blank">Report Bugs</a>
+        </div>
+      </div>
+      <div>
         <h1 class="project">My Homepage</h1>
         <homepage></homepage>
         If your having problems with this site or want to report any issues please write me <a class="highlight" href="mailto:website@paulmueser.de">here</a>.
@@ -49,6 +59,7 @@
 <script>
 import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
 import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
+import FactCheckingEngine from '@/components/projectDescriptions/FactCheckingEngine.vue'
 import Homepage from '@/components/projectDescriptions/Homepage.vue'
 
 export default {
@@ -56,6 +67,7 @@ export default {
   components: {
     StatsBot,
     MusicBot,
+    FactCheckingEngine,
     Homepage
   }
 }
