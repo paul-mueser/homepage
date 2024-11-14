@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <h1>Discord Music Bot <a class="highlight" href="https://github.com/paul-mueser/sw-fact-checking-engine" rel="external nofollow noopener" target="_blank">
+      <h1>Fact Checking Engine <a class="highlight" href="https://github.com/paul-mueser/sw-fact-checking-engine" rel="external nofollow noopener" target="_blank">
         <font-awesome-icon :icon="['fas', 'code']"/>
       </a></h1>
       <div class="general">
