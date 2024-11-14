@@ -3,6 +3,7 @@ import OverviewView from '../views/OverviewView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import StatsBotView from '../views/projects/StatsBotView.vue'
 import MusicBotView from '../views/projects/MusicBotView.vue'
+import FactCheckingEngineView from '../views/projects/FactCheckingEngineView.vue'
 import LegalView from '../views/LegalView.vue'
 import PrivacyView from '../views/PrivacyView.vue'
 
@@ -30,6 +31,12 @@ const routes = [
         name: 'musicbot',
         component: MusicBotView,
         meta: {title: 'Musicbot'}
+    },
+    {
+        path: '/projects/factCheckingEngine',
+        name: 'factCheckingEngine',
+        component: FactCheckingEngineView,
+        meta: {title: 'FactCheckingEngine'}
     },
     {
         path: '/legal',
