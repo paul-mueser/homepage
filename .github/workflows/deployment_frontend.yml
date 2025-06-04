@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies and build
         run: |
           cd ./homepage/
+          sed -i "s|{{API_URL}}|${{ secrets.API_URL }}|g" src/services/contentService.js
           npm install
           npm run build
 
