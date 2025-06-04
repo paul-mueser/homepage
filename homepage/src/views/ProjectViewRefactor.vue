@@ -1,0 +1,58 @@
+<template>
+  <div class="container">
+    <div class="general">
+      <h1>General Informations</h1>
+      <p>
+        Here you can find a broad overview over some my projects.
+      </p>
+    </div>
+    <div class="projects">
+      <div v-for="project in content">
+        <h1 class="project">{{ project.title }}</h1>
+        <p>{{ project.description }}</p>
+        <div class="links" v-for="(link, index) in project.links" :key="index">
+          <a class="highlight" :href="link.href" rel="external nofollow noopener" target="_blank">{{ link.text }}</a>
+          <a class="divider" v-if="index !== project.links.length - 1">|</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'ProjectView',
+  data() {
+    return {
+      content
+    }
+  },
+  mounted() {
+    content = fetchProjects();
+  }
+}
+</script>
+
+<style scoped>
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  padding-top: 10px;
+}
+
+.project {
+  border-top: 1px solid var(--text-color);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+</style>
