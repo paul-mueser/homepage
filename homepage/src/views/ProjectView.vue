@@ -3,7 +3,7 @@
     <div class="general">
       <h1>General Informations</h1>
       <p>
-        Here you can find a broad overview over some my projects.
+        Here you can find a broad overview over some of my projects.
       </p>
     </div>
     <div class="projects">
