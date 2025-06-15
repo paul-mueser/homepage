@@ -20,16 +20,32 @@
 </template>
 
 <script>
+import { fetchProjects } from '@/services/contentService';
 
 export default {
   name: 'ProjectView',
   data() {
     return {
-      content
+      content: [
+        {
+          title: "No Projects",
+          description: "There are no projects available at the moment.",
+          links: []
+        }
+      ]
     }
   },
-  mounted() {
-    content = fetchProjects();
+  async mounted() {
+    this.content = await fetchProjects();
+    if (!this.content || this.content.length === 0) {
+      this.content = [
+        {
+          title: "No Projects",
+          description: "There are no projects available at the moment.",
+          links: []
+        }
+      ];
+    }
   }
 }
 </script>
