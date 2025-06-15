@@ -75,6 +75,7 @@ h1 {
 .links {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1.5em;
 }
 
 .divider {
