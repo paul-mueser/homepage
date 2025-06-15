@@ -65,7 +65,7 @@ h1 {
 .project::before {
   content: '';
   position: absolute;
-  top: -0.75em;
+  top: -0.5em;
   left: 0;
   right: 0;
   height: 1px;
