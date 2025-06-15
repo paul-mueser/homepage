@@ -57,7 +57,17 @@ h1 {
 }
 
 .project {
-  border-top: 1px solid var(--text-color);
+  position: relative;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  top: -0.75em;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--text-color);
 }
 
 .links {
