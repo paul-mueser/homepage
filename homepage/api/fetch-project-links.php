@@ -18,7 +18,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 $projectName = $data['projectName'];
 
 // Fetch user from database
-$stmt = $conn->prepare("SELECT * FROM projectLinks WHERE name = ? ORDER BY event");
+$stmt = $conn->prepare("SELECT * FROM projectLinks WHERE name = ? ORDER BY LAST_EDITED");
 $stmt->bind_param("s", $projectName);
 $stmt->execute();
 $result = $stmt->get_result();
