@@ -58,6 +58,8 @@ h1 {
 
 .project {
   position: relative;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .project::before {
@@ -73,7 +75,6 @@ h1 {
 .links {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.5em;
 }
 
 .divider {
