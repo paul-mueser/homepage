@@ -37,15 +37,6 @@ export default {
   },
   async mounted() {
     this.content = await fetchProjects();
-    if (!this.content || this.content.length === 0) {
-      this.content = [
-        {
-          title: "No Projects",
-          description: "There are no projects available at the moment.",
-          links: []
-        }
-      ];
-    }
   }
 }
 </script>
