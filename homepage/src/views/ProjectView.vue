@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="projects">
-      <div v-for="project in content">
+      <template v-for="project in content">
         <h1 class="project">{{ project.title }}</h1>
         <p>{{ project.description }}</p>
         <div class="links">
@@ -16,7 +16,7 @@
             <a class="divider" v-if="index !== project.links.length - 1">|</a>
           </template>
         </div>
-      </div>
+      </template>
     </div>
   </div>
 </template>
@@ -73,6 +73,7 @@ h1 {
 .links {
   display: flex;
   flex-direction: row;
+  margin-bottom: 0.5em;
 }
 
 .divider {
