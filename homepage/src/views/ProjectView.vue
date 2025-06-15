@@ -38,7 +38,6 @@ export default {
   methods: {
     async getProjects() {
       this.content = await fetchProjects();
-      console.log(this.content);
     }
   },
   mounted() {

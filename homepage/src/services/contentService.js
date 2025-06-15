@@ -14,6 +14,7 @@ export const fetchProjects = async () => {
         }
         return result.data;
     } catch (err) {
+        console.error("Error fetching projects:", err);
         return [
         {
           title: "No Projects",
