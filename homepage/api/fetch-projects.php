@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch user from database
-$stmt = $conn->prepare("SELECT * FROM projects");
+$stmt = $conn->prepare("SELECT * FROM projects ORDER BY position");
 $stmt->execute();
 $result = $stmt->get_result();
 $data = $result->fetch_all(MYSQLI_ASSOC);
