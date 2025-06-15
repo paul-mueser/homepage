@@ -5,6 +5,7 @@ const API_URL = '{{API_URL}}';
 export const fetchProjects = async () => {
     try {
         const result = await axios.get(`${API_URL}/api/fetch-projects`);
+        console.log(result);
         for (const project of result.data) {
             try {
                 const res = await axios.post(`${API_URL}/api/fetch-project-links`, { projectName: project.name });
