@@ -8,11 +8,11 @@
     </div>
     <div class="projects">
       <template v-for="project in content">
-        <h1 class="project">{{ project.title }}</h1>
-        <p>{{ project.description }}</p>
+        <h1 class="project" v-html="project.title"></h1>
+        <p v-html="project.description"></p>
         <div class="links">
           <template v-for="(link, index) in project.links" :key="index">
-            <a class="highlight" :href="link.href" rel="external nofollow noopener" target="_blank">{{ link.text }}</a>
+            <a class="highlight" :href="link.href" rel="external nofollow noopener" target="_blank"><span v-html="link.text"></span></a>
             <a class="divider" v-if="index !== project.links.length - 1">|</a>
           </template>
         </div>
