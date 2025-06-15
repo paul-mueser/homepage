@@ -1,8 +1,6 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import OverviewView from '../views/OverviewView.vue'
 import ProjectView from '../views/ProjectView.vue'
-import StatsBotView from '../views/projects/StatsBotView.vue'
-import MusicBotView from '../views/projects/MusicBotView.vue'
 import LegalView from '../views/LegalView.vue'
 import PrivacyView from '../views/PrivacyView.vue'
 
@@ -18,18 +16,6 @@ const routes = [
         name: 'projects',
         component: ProjectView,
         meta: {title: 'Projects'}
-    },
-    {
-        path: '/projects/statsbot',
-        name: 'statsbot',
-        component: StatsBotView,
-        meta: {title: 'Statsbot'}
-    },
-    {
-        path: '/projects/musicbot',
-        name: 'musicbot',
-        component: MusicBotView,
-        meta: {title: 'Musicbot'}
     },
     {
         path: '/legal',

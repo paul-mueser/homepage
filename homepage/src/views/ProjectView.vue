@@ -3,60 +3,49 @@
     <div class="general">
       <h1>General Informations</h1>
       <p>
-        Here you can find a broad overview of my projects. For detailed information, please visit the project's page or
-        the github repository.
+        Here you can find a broad overview over some my projects.
       </p>
     </div>
     <div class="projects">
-      <div>
-        <h1 class="project">Discord Stats Bot</h1>
-        <statsBot></statsBot>
-        <div class="links">
-          <router-link class="highlight" to="/projects/statsbot">More information</router-link>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/stats-bot/issues/new?assignees=paul-mueser&labels=bug&projects=&template=bug_report.md&title=%5BBUG%5D+" 
-          rel="external nofollow noopener" target="_blank">Report Bugs</a>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/stats-bot/issues/new?assignees=paul-mueser&labels=enhancement&projects=&template=feature_request.md&title=%5BFEATURE%5D+" 
-          rel="external nofollow noopener" target="_blank">Request Features</a>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://discord.com/oauth2/authorize?client_id=1207711066247921766" 
-          rel="external nofollow noopener" target="_blank">Invite to Discord</a>
+      <div v-for="project in content">
+        <h1 class="project">{{ project.title }}</h1>
+        <p>{{ project.description }}</p>
+        <div class="links" v-for="(link, index) in project.links" :key="index">
+          <a class="highlight" :href="link.href" rel="external nofollow noopener" target="_blank">{{ link.text }}</a>
+          <a class="divider" v-if="index !== project.links.length - 1">|</a>
         </div>
-      </div>
-      <div>
-        <h1 class="project">Discord Music Bot</h1>
-        <musicBot></musicBot>
-        <div class="links">
-          <router-link class="highlight" to="/projects/musicbot">More information</router-link>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/music-bot/issues/new?assignees=paul-mueser&labels=bug&projects=&template=bug_report.md&title=%5BBUG%5D+" 
-          rel="external nofollow noopener" target="_blank">Report Bugs</a>
-          <a class="divider">|</a>
-          <a class="highlight" href="https://github.com/paul-mueser/music-bot/issues/new?assignees=paul-mueser&labels=enhancement&projects=&template=feature_request.md&title=%5BFEATURE%5D+" 
-          rel="external nofollow noopener" target="_blank">Request Features</a>
-        </div>
-      </div>
-      <div>
-        <h1 class="project">My Homepage</h1>
-        <homepage></homepage>
-        If your having problems with this site or want to report any issues please write me <a class="highlight" href="mailto:website@paulmueser.de">here</a>.
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import StatsBot from '@/components/projectDescriptions/StatsBot.vue'
-import MusicBot from '@/components/projectDescriptions/MusicBot.vue'
-import Homepage from '@/components/projectDescriptions/Homepage.vue'
+import { fetchProjects } from '@/services/contentService';
 
 export default {
   name: 'ProjectView',
-  components: {
-    StatsBot,
-    MusicBot,
-    Homepage
+  data() {
+    return {
+      content: [
+        {
+          title: "No Projects",
+          description: "There are no projects available at the moment.",
+          links: []
+        }
+      ]
+    }
+  },
+  async mounted() {
+    this.content = await fetchProjects();
+    if (!this.content || this.content.length === 0) {
+      this.content = [
+        {
+          title: "No Projects",
+          description: "There are no projects available at the moment.",
+          links: []
+        }
+      ];
+    }
   }
 }
 </script>
