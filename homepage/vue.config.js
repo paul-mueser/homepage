@@ -6,8 +6,6 @@ const paths = [
     '/',
     '/#/',
     '/#/projects/',
-    '/#/projects/statsbot/',
-    '/#/projects/musicbot/',
 ]
 
 module.exports = defineConfig({
