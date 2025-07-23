@@ -7,7 +7,7 @@
           <router-link to="/projects" class="highlight">Discord Stats Bot</router-link>
         </h3>
         <p style="margin-top: 0;">
-          This is a basic Discord bot primarily used for gathering statistics from a channel in a Discord server called
+          This is a basic Discord bot primarily used for gathering statistics from a channel called
           &quot;Zitate&quot;, where users can post quotes.
         </p>
       </div>
