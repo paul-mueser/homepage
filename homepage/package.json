@@ -30,5 +30,10 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "overrides": {
+    "@vue/cli-service": {
+      "webpack-dev-server": "5.2.1"
+    }
+  }
 }
