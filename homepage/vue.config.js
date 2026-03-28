@@ -8,10 +8,6 @@ const paths = [
     '/#/projects/',
 ]
 
-module.exports = defineConfig({
-    transpileDependencies: true
-})
-
 module.exports = {
     configureWebpack: {
         plugins: [
@@ -25,5 +21,5 @@ module.exports = {
         ]
     },
 
-    
+    transpileDependencies: true
 }
