@@ -8,7 +8,7 @@ export const fetchProjects = async () => {
         const data = result.data.data || [];
         for (const project of data) {
             try {
-                const res = await axios.post(`${API_URL}/api/fetch-project-links`, { projectName: project.name });
+                const res = await axios.query(`${API_URL}/api/fetch-project-links`, { projectName: project.name });
                 project.links = res.data.data;
             } catch (err) {
             }
