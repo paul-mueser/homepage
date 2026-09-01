@@ -1,4 +1,4 @@
-name: Deployment Frontend
+name: Build Frontend
 permissions:
   contents: read
 
