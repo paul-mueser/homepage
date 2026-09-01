@@ -1,0 +1,27 @@
+name: Deployment Frontend
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.14.1'
+
+      - name: Install dependencies and build
+        run: |
+          cd ./homepage/
+          sed -i "s|{{API_URL}}|${{ secrets.API_URL }}|g" src/services/contentService.js
+          npm install
+          npm run build
