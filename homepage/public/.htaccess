@@ -1,3 +1,4 @@
+
 # Enable Rewrite Engine
 RewriteEngine On
 
@@ -10,17 +11,21 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     Options -MultiViews
 </IfModule>
 
-# SPA Routing (e.g. React, Vue, Angular)
-<IfModule mod_rewrite.c>
-    RewriteBase /
+# API requests
+RewriteRule ^api/([a-zA-Z0-9_-]+)$ api/$1.php [L]
 
-    # Don't rewrite index.html
-    RewriteRule ^index\.html$ - [L]
+# API requests must NOT be rewritten to index.html
+RewriteRule ^api(/.*)?$ - [L]
 
-    # If the requested file or directory exists, serve it directly
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+# SPA Routing (Vue / React / Angular)
+RewriteBase /
 
-    # Otherwise, redirect to index.html
-    RewriteRule . /index.html [L]
-</IfModule>
+# Don't rewrite index.html
+RewriteRule ^index\.html$ - [L]
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, serve index.html
+RewriteRule . /index.html [L]
