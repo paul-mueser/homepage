@@ -5,12 +5,9 @@
       <p>Angaben gem&auml;&szlig; &sect; 5 TMG</p>
       <p>
         Paul M&uuml;ser <br>
-        Dorfstra&szlig;e 16<br>
-        59556 Lippstadt <br>
       </p>
       <p>
         <strong>Kontakt:</strong> <br>
-        Telefon: +491757261517<br>
         E-Mail: <a class="highlight" href='mailto:info@paulmueser.de'>info@paulmueser.de</a><br>
       </p>
       <p>

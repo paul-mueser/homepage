@@ -1,0 +1,26 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Disable MultiViews
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+# SPA Routing (e.g. React, Vue, Angular)
+<IfModule mod_rewrite.c>
+    RewriteBase /
+
+    # Don't rewrite index.html
+    RewriteRule ^index\.html$ - [L]
+
+    # If the requested file or directory exists, serve it directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Otherwise, redirect to index.html
+    RewriteRule . /index.html [L]
+</IfModule>

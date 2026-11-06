@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { fetchProjects } from '@/services/contentService';
+import { fetchProjects } from '@/services/contentService.js';
 
 export default {
   name: 'ProjectView',

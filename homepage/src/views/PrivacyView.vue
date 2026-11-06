@@ -75,11 +75,8 @@ privacy" target="_blank" rel="noopener noreferrer">https://www.ionos.de/terms-gt
       <h3>Hinweis zur verantwortlichen Stelle</h3>
       <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf
         dieser Website ist:</p>
-      <p>Paul M&uuml;ser<br/>
-        Dorfstra&szlig;e 16<br/>
-        59556 Lippstadt</p>
-      <p>Telefon: +491757261517<br/>
-        E-Mail: <a class="highlight" href='mailto:info@paulmueser.de'>info@paulmueser.de</a></p>
+      <p>Paul M&uuml;ser</p>
+      <p>E-Mail: <a class="highlight" href='mailto:info@paulmueser.de'>info@paulmueser.de</a></p>
       <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen
         &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-
         Adressen o. &Auml;.) entscheidet.</p>
